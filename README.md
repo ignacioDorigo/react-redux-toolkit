@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# ⚡ React + Redux Toolkit: Global State Practice
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este repositorio es un laboratorio práctico diseñado para dominar el manejo de estado global utilizando **Redux Toolkit (RTK)**. El proyecto se centra en un contador funcional que sirve como base para entender cómo fluye la información desde el Store hasta los componentes de React de manera eficiente.
 
-## Available Scripts
+## 🚀 Características del Proyecto
 
-In the project directory, you can run:
+- **Global State Management:** Implementación de un estado centralizado y predecible.
+- **Slice Pattern:** Organización de la lógica de estado, acciones y reducers en un solo lugar mediante `createSlice`.
+- **Store Configuration:** Configuración simplificada del store con `configureStore`.
+- **Hooks de React-Redux:** Uso de `useSelector` para extraer datos y `useDispatch` para disparar acciones.
+- **Inmutabilidad Simplificada:** Aprovechamiento de la librería _Immer_ (integrada en RTK) para escribir lógica de mutación de forma segura.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Stack Tecnológico
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React:** Biblioteca principal para la UI.
+- **Redux Toolkit:** El estándar oficial y eficiente para el desarrollo de Redux.
+- **React-Redux:** La capa de unión oficial entre React y Redux.
+- **CSS3:** Estilos para una interfaz clara y funcional.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📂 Contenido del Laboratorio
 
-### `npm run build`
+| Sección       | Concepto Clave                                              | Herramienta      |
+| :------------ | :---------------------------------------------------------- | :--------------- |
+| **Store**     | El "almacén" central de la verdad (Single Source of Truth). | `configureStore` |
+| **Slices**    | Fragmentos de estado y lógica segmentada.                   | `createSlice`    |
+| **Actions**   | Despachadores de eventos para modificar el estado.          | `useDispatch`    |
+| **Selectors** | Lectura precisa de partes específicas del estado global.    | `useSelector`    |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔧 Configuración Local
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1.  **Clonar el repo:**
 
-### `npm run eject`
+    ```bash
+    git clone https://github.com/ignacioDorigo/react-redux-toolkit.git
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2.  **Instalar las dependencias:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    npm install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3.  **Lanzar el servidor de desarrollo:**
+    ```bash
+    npm run dev
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 💡 ¿Por qué Redux Toolkit?
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> Tradicionalmente, Redux requería mucho código repetitivo (boilerplate). **Redux Toolkit** transforma esa experiencia, permitiendo configurar el store con una sola función y agrupar acciones y reducers en Slices, lo que hace que el código sea mucho más legible, mantenible y robusto.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 👤 Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Ignacio Tomás Dorigo** - [GitHub](https://github.com/ignacioDorigo)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **LinkedIn** - [LinkedIn](https://www.linkedin.com/in/ignacio-dorigo-3aa267203)
